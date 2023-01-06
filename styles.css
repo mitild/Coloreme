@@ -116,10 +116,10 @@ button:active {
   }
 
   .colors-container {
-    grid-auto-rows: 80vh;
+    grid-auto-rows: 85vh;
   }
 
   .hex-container {
-    height: 10vh;
+    height: 5vh;
   }
 }
