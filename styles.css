@@ -109,4 +109,8 @@ button:active {
 [data-tooltip]:hover:before {        
   opacity : 1;
 }
-
+@media (max-width: 480px) {
+  .colors-container {
+    grid-auto-rows: minmax(73vh, auto);
+  }
+}
