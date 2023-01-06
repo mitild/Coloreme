@@ -9,10 +9,7 @@
 body {
   background-color: #FFFDFE;
   font-family: 'Inter', sans-serif;
-}
-
-.container {
-  height: 80vh; 
+  height: 100vh;
 }
 
 nav {
