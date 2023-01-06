@@ -8,7 +8,9 @@ document.getElementById('get-color-btn').addEventListener('click', fetchColors)
 document.addEventListener('click', e => {
   if(e.target.dataset.code){
     navigator.clipboard.writeText(e.target.dataset.code)
+
     e.target.setAttribute("data-tooltip", " Copied!!")
+    
     setTimeout(function(){
       e.target.setAttribute("data-tooltip", "Copy to clipboard")
   }, 1000);
@@ -21,8 +23,8 @@ function fetchColors() {
   const schemesValue = document.getElementById('schemes-list').value
 
   fetch(`https://www.thecolorapi.com/scheme?hex=${colorValue}&mode=${schemesValue}&count=5`)
-  .then(res => res.json())
-  .then(data => getHtml(data)) 
+    .then(res => res.json())
+    .then(data => getHtml(data)) 
 }
 
 // GET THE HTML & IDENTIFY EACH COLOR
@@ -31,9 +33,9 @@ function getHtml(data) {
   let htmlCodes = ''
       data.colors.forEach(e => {
         htmlColors += `
-        <div data-code="${e.hex.value}" id="${e.hex.value}" class="color" style="background-color:${e.hex.value}" data-tooltip="Copy to clipboard">
-        </div>
-        `
+          <div data-code="${e.hex.value}" id="${e.hex.value}" class="color" style="background-color:${e.hex.value}" data-tooltip="Copy to clipboard">
+          </div>
+          `
         htmlCodes += `
           <p data-code="${e.hex.value}" id="${e.hex.value}" class="hex" data-tooltip="Copy to clipboard">${e.hex.value}</p>
         `
