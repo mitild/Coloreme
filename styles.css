@@ -116,7 +116,7 @@ button:active {
   }
 
   .colors-container {
-    grid-auto-rows: 70vh;
+    grid-auto-rows: 80vh;
   }
 
   .hex-container {
