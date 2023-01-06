@@ -9,11 +9,9 @@ document.addEventListener('click', e => {
   if(e.target.dataset.code){
     navigator.clipboard.writeText(e.target.dataset.code)
     e.target.setAttribute("data-tooltip", " Copied!!")
-    if(window.matchMedia("(min-width: 400px)").matches) {
-        setTimeout(function(){
-        e.target.setAttribute("data-tooltip", "Copy to clipboard")
-      }, 2000)
-    }
+    setTimeout(function(){
+      e.target.setAttribute("data-tooltip", "Copy to clipboard")
+  }, 1000);
   }
 })
 
