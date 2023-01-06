@@ -9,6 +9,11 @@
 body {
   background-color: #FFFDFE;
   font-family: 'Inter', sans-serif;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
 }
 
 nav {
@@ -111,6 +116,6 @@ button:active {
 }
 @media (max-width: 480px) {
   .colors-container {
-    grid-auto-rows: minmax(73vh, auto);
+    grid-auto-rows: 60vh;
   }
 }
