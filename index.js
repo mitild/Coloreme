@@ -8,7 +8,7 @@ document.getElementById('get-color-btn').addEventListener('click', fetchColors)
 document.addEventListener('click', e => {
   if(e.target.dataset.code){
     navigator.clipboard.writeText(e.target.dataset.code)
-    e.target.setAttribute("data-tooltip", e.target.dataset.code + " Copied!!")
+    e.target.setAttribute("data-tooltip", " Copied!!")
     setTimeout(function(){
       e.target.setAttribute("data-tooltip", "Copy to clipboard")
   }, 2000);
