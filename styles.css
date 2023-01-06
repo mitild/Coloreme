@@ -12,10 +12,6 @@ body {
   height: 100vh;
 }
 
-section {
-  height: 100vh;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -115,7 +111,15 @@ button:active {
   opacity : 1;
 }
 @media (max-width: 480px) {
+  nav {
+    height: 10vh;
+  }
+
   .colors-container {
-    grid-auto-rows: 60vh;
+    grid-auto-rows: 80vh;
+  }
+
+  .hex-container {
+    height: 10vh;
   }
 }
