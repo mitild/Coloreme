@@ -11,16 +11,12 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.container {
-  height: 70vh;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1.6em 1em;
+  /* padding: 1.6em 1em; */
   height: 10vh;
 }
 
