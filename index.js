@@ -41,11 +41,11 @@ function getHtml(data) {
   let htmlCodes = ''
       data.colors.forEach(e => {
         htmlColors += `
-          <div data-code="${e.hex.value}" id="${e.hex.value}" class="color" style="background-color:${e.hex.value}" data-tooltip="Copy to clipboard">
+          <div data-code="${e.hex.value}" id="${e.hex.value}" class="color" style="background-color:${e.hex.value}">
           </div>
           `
         htmlCodes += `
-          <p data-code="${e.hex.value}" id="${e.hex.value}" class="hex" data-tooltip="Copy to clipboard">${e.hex.value}</p>
+          <p data-code="${e.hex.value}" id="${e.hex.value}" class="hex">${e.hex.value}</p>
         `
         document.getElementById('colors').innerHTML = htmlColors
         document.getElementById('codes').innerHTML = htmlCodes
