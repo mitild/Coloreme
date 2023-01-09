@@ -18,7 +18,7 @@ document.addEventListener('click', e => {
 })
 
 document.addEventListener('mouseover', e => {
-  if(e.target.dataset.code){    
+  if(e.target.dataset.code && window.matchMedia("(min-width: 400px)").matches){    
     e.target.setAttribute("data-tooltip", "Copy to clipboard")
   }
 })
