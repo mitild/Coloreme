@@ -9,6 +9,9 @@
 body {
   background-color: #FFFDFE;
   font-family: 'Inter', sans-serif;
+}
+
+.container {
   height: 100vh;
 }
 
