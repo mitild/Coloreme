@@ -12,10 +12,18 @@ document.addEventListener('click', e => {
     e.target.setAttribute("data-tooltip", " Copied!!")
     
     setTimeout(function(){
-      e.target.setAttribute("data-tooltip", "Copy to clipboard")
-  }, 1000);
+      e.target.setAttribute("data-tooltip", "")
+  }, 600);
   }
 })
+
+document.addEventListener('mouseover', e => {
+  if(e.target.dataset.code){    
+    e.target.setAttribute("data-tooltip", "Copy to clipboard")
+  }
+})
+
+
 
 // FETCH COLORS FROM API
 function fetchColors() {
