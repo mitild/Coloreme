@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  max-height: 70vh;
+  max-height: 100vh;
 }
 
 nav {
@@ -21,7 +21,7 @@ nav {
   align-items: center;
   width: 100%;
   padding: 1.6em 1em;
-  height: 10vh;
+  height: 10%;
 }
 
 input[type="color"] {
@@ -76,9 +76,10 @@ button:active {
 }
 
 .colors-container {
+  height: 83vh;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: minmax(83vh, auto);
+  grid-auto-rows: minmax(100%, auto);
 }
 
 .color,
@@ -92,7 +93,7 @@ button:active {
 .hex-container {
   font-size: .75rem;
   font-weight: 500;
-  height: 7vh;
+  height: 7%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
