@@ -4,7 +4,7 @@ document.addEventListener('load', fetchColors())
 // GET NEW SCHEME ON BUTTON CLICK
 document.getElementById('get-color-btn').addEventListener('click', fetchColors)
 
-// COPY HEX CODE TO CLIPBOARD
+c
 document.addEventListener('click', e => {
   if(e.target.dataset.code){
     navigator.clipboard.writeText(e.target.dataset.code)
@@ -17,6 +17,7 @@ document.addEventListener('click', e => {
   }
 })
 
+// ADD TOOLTIP OF "COPY TO CLIPBOARD" ON HOVER
 document.addEventListener('mouseover', e => {
   if(e.target.dataset.code && window.matchMedia("(min-width: 400px)").matches){    
     e.target.setAttribute("data-tooltip", "Copy to clipboard")
