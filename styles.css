@@ -167,7 +167,11 @@ MEDIA QUERIES
   }
 
   nav {
-    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .action-elements {
+    width: 100%;
   }
 
 }
