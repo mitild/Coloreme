@@ -172,6 +172,7 @@ MEDIA QUERIES
 
   .action-elements {
     width: 100%;
+    align-items: center;
   }
 
 }
