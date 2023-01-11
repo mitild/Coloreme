@@ -175,4 +175,8 @@ MEDIA QUERIES
     align-items: center;
   }
 
+  input[type="color"] {
+    width: 7em;
+  }
+
 }
