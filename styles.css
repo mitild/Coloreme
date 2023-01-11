@@ -24,8 +24,16 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1.6em 1em;
+  padding: 1.6em 2em;
   height: 10vh;
+}
+
+.logo {
+  width: 8em;
+}
+
+.action-elements {
+  display: flex;
 }
 
 input[type="color"] {
@@ -77,6 +85,10 @@ button:hover,
 button:active {
   background-color: #374151;
   color: #FFF;
+}
+
+.small-btn {
+  width: 4em;
 }
 
 /* --------------------
@@ -133,3 +145,29 @@ TOOLTIP
   opacity : 1;
 }
 
+/* --------------------
+DARK MODE
+-----------------------*/
+
+.dark {
+  background-color: #374151;
+  color: #FFFDFE;
+  transition: all .5s;
+}
+
+/* --------------------
+MEDIA QUERIES
+-----------------------*/
+
+@media (max-width: 810px) {
+  
+  .logo,
+  .small-btn {
+    display: none;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+}

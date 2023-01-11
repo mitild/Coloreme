@@ -23,6 +23,17 @@ document.addEventListener('mouseover', e => {
   }
 })
 
+// TOOGLE NIGHT / DAY MODE
+
+const changeModeBtn = document.getElementById('change-mode-btn')
+
+  changeModeBtn.addEventListener('click', ()=> {
+  document.body.classList.toggle('dark')
+  document.getElementById('schemes-list').classList.toggle('dark')
+  document.getElementById('get-color-btn').classList.toggle('dark')
+  changeModeBtn.classList.toggle('dark')
+})
+
 // FETCH COLORS FROM API
 function fetchColors() {
   const colorValue = document.getElementById('color-input').value.slice(1)
