@@ -168,6 +168,7 @@ MEDIA QUERIES
 
   nav {
     justify-content: space-between;
+    padding: 1.6em 1em;
   }
 
   .action-elements {
